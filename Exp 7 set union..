@@ -12,13 +12,13 @@ unionSet.add(i);
 return unionSet
 }
 // two sets of fruits
-const setA = new Set(['apple’, 'mango’, 'orange']);
-const setB = new Set(['grapes’, ‘apple’, 'banana']);
+const setA = new Set(["apple", "mango", "orange"]);
+const setB = new Set(["grapes", "apple","banana"]);
 const result = union(setA, setB);
 console.log(result);
 
-// Exp 7b: Perform intersection operation - Elements of set a that are
-also in setb
+
+// Exp 7b: Perform intersection operation - Elements of set a that are also in setb
 function intersection(setA, setB) {
 let intersectionSet = new Set();
 for (let i of setB) {
@@ -29,13 +29,13 @@ intersectionSet.add(i);
 return intersectionSet;
 }
 // two sets of fruits
-const setA = new Set(['apple’, 'mango’, 'orange']);
-const setB = new Set(['grapes’, ‘apple’, 'banana']);
+const setA = new Set(["apple", "mango", "orange"]);
+const setB = new Set(["grapes", "apple", "banana"]);
 const result = intersection(setA, setB);
 console.log(result);
 
-// Exp 7c: Perform difference operation- Elements of set a that are
-notin set b
+
+// Exp 7c: Perform difference operation- Elements of set a that are notin set b
 function difference(setA, setB) {
 
 let differenceSet = new Set(setA)
@@ -49,7 +49,7 @@ differenceSet.delete(i)
 return differenceSet
 }
 // two sets of fruits
-const setA = new Set(['apple’, 'mango’, 'orange']);
-const setB = new Set(['grapes’, ‘apple’, 'banana']);
+const setA = new Set(["apple", "mango", "orange"]);
+const setB = new Set(["grapes", "apple", "banana"]);
 const result = difference(setA, setB);
 console.log(result);
