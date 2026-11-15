@@ -1,9 +1,9 @@
 //Experiment 3a. Write a program to reverse a string
 function reverseString(str) {
 // empty string
-let newString ="";
-for (let i = strlength - 1; i >= 0; i--) {
-newsString += str[il;
+let newString = "";
+for (let i = str.length - 1; i >= 0; i--) {
+newString += str[i];
 }
 return newString;
 }
@@ -12,11 +12,10 @@ const string = prompt('Enter a string: ');
 const result = reverseString(string);
 console.log(result);
 
-
 // Experiment 3b. Program to replace a character of a string
-const string = 'Mr Red has a red house and a red car’;
+const string = 'Mr Red has a red house and a red car';
 // replace the characters
-const newText = string.replace('red’, 'blue’);
+const newText = string.replace('red', 'blue');
 // display the result
 console.log(newText);
 
