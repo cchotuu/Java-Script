@@ -1,0 +1,71 @@
+//Experiment 8a: JavaScript program to change background color of
+Webpage on mouse over event
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 8a</title>
+
+    <script>
+        function changeColor1() {
+            document.body.style.backgroundColor = "red";
+        }
+
+        function changeColor2() {
+            document.body.style.backgroundColor = "yellow";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 id="head1"
+        onmouseover="changeColor1()"
+        onmouseout="changeColor2()">
+        Experiment 8a
+    </h1>
+
+    <h2>Change Background Color on Mouse Over</h2>
+
+    <p>Move the mouse over the heading to change the background color.</p>
+
+</body>
+</html>
+
+//Experiment 8b: Change text box color on onfocus event 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 8b</title>
+
+    <script>
+        function myFocusFunction() {
+            document.getElementById("myInput").style.backgroundColor = "yellow";
+        }
+
+        function myBlurFunction() {
+            document.getElementById("myInput").style.backgroundColor = "";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Experiment 8b</h1>
+
+    <p>Change textbox color on focus event.</p>
+
+    <h2>Student Information Form</h2>
+
+    <form id="myForm">
+        Student Name:<br>
+
+        <input type="text" id="myInput"
+               onfocus="myFocusFunction()"
+               onblur="myBlurFunction()">
+    </form>
+
+</body>
+</html>
