@@ -1,11 +1,10 @@
 // program to generate a multiplication table
 // take input from the user
-const number = parselnt(prompt('Enter an integer: '));
+const number = parseInt(prompt('Enter an integer: '));
 //creating a multiplication table
-for(leti=1;i<=10; i++) {
+for(let i=1;i<=10; i++) {
 // multiply i with number
 const result =i * number;
 // display the result
-console.log(*${number} * ${i} = ${result});
-document.write("${number} * ${i} = S{result} <br>");
+console.log(`${number} * ${i} = ${result}`);
 }
